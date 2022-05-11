@@ -12,7 +12,7 @@ entity DisplayLogicSmall is
 port(	 
        xcolumn, yrow : in vga_xy; -- row and  column indexes of VGA video
 		 VGA_CLK : in std_logic;
-	    VGA_R, VGA_G, VGA_B: out vga_byte --  color information
+	    RGB24 : out std_logic_vector(23 downto 0) --  color information
 	 ); 
 end;
 
@@ -107,7 +107,7 @@ begin -- architecture
 		end case; 
 
 	-- Copy results in RGB to outputs of entity
-		VGA_R<=RGB.R; VGA_G<=RGB.G; VGA_B<=RGB.B;
+		 RGB24<=RGB.R & RGB.G & RGB.B;
 -----------------------------------------------------------------------------
 	end process;
 
