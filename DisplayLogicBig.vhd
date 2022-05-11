@@ -8,7 +8,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;       -- type integer and unsigned
 use work.VGApackage.all;
 
-entity DisplayLogic2 is 
+entity DisplayLogicBig is 
 port(	 
        xcolumn, yrow : in vga_xy; -- row and  column indexes of VGA video
 		 VGA_CLK : in std_logic;
@@ -16,7 +16,7 @@ port(
 	 ); 
 end;
 
-architecture behavioral of DisplayLogic2 is
+architecture behavioral of DisplayLogicBig is
 
 ---------------------------------------------------------------------------------
 -- Used colors 	

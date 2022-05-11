@@ -320,7 +320,7 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 544 120 760 232)
-	(text "DisplayLogic2" (rect 5 0 74 12)(font "Arial" ))
+	(text "DisplayLogicBig" (rect 5 0 84 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
 		(pt 0 32)

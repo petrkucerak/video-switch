@@ -31,7 +31,7 @@ constant NUMBER_OF_WRITTEN_IMAGES : positive := 1;
 ---------------------------------------------------------------------------------------
 -- ***ToDo 2 of 3: Replace by your own component
 --component DisplayLogic2 is 
-component DisplayLogic02 is 
+component DisplayLogicBig is 
 port(	 
        yrow, xcolumn : in vga_xy; -- row and  column indexes of VGA video
 	    VGA_CLK : in std_logic;  --pixel clock
@@ -253,7 +253,7 @@ port map(
 --------------------------------------------------------------------------------------
 -- ***ToDo 3 of 3: Replace by your own component
 --iDisplayLogic : DisplayLogic2
-iDisplayLogic : DisplayLogic02
+iDisplayLogic : DisplayLogicBig
 port map(	
 		 yrow => row_signal, -- yrow input by wire row_signal
 		 xcolumn => column_signal, -- xcolumn by wire column_signal
