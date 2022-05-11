@@ -1,0 +1,25 @@
+List of files
+===============================================================
+Demo_LCD.bdf, Demo_LCD0.bdf- the schemas for downloading to DE2-115
+DisplayLogic02.vhd - flag 640x480, the first step without ROM romPicture2
+DisplayLogic2.vhd - flag 640x480 with added ROM romPicture2
+lcd_display.sdc - time guest definitions for lcd
+
+VGApackage.vhd - basic constants and functions for VGA and LCD
+romPicture2.mif - the content of ROM
+romPicture2.qip,romPicture2.vhd - files created by Tools->MegaWizard Plug-In Manager
+
+LCDgenerator.vhd - the generator of LCD signal
+LCDRegDE2_115.vhd - the output register after DisplayLogic2 for DE2-115 board
+LCD_altpll.qip, LCD_altpll.vhd - phase locked loop necessary for LCD genrator
+LCDpackage.vhd - it adds only 2 constants, the sizes of LCD, it is nor necessary
+
+testbench_DisplayLogic.vhd - *** you can run this file only in ModelSim, 
+                 but do not forget also to copy romPicture2.mif ton ModelSim project
+VGAgenerator.vhd, VGARegDE2.vhd,  - files used in testbench
+
+VGARegDE2_115.vhd - for direct output do VGA connector of the DE2-115 board in case of VGAgenerator.vhd 
+VGAtiming.sdc - in case of the usage of VGA output
+
+-- The files of 320x240 flag, not used this year, but let here for the reference
+DisplayLogic.vhd, DisplayLogic0.vhd, romPicture.mif, romPicture.qip, romPicture.vhd

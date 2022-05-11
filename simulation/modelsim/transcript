@@ -1,0 +1,75 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile C:/SPS/LSPVGA_LCD_DE2_115_V21/simulation/modelsim/vga.mpf 
+# Loading project vga
+# Warning: Cannot write compile report file: C:/SPS/LSPVGA_LCD_DE2_115_V21/simulation/modelsim/vga.cr.mti
+# Compile of VGApackage.vhd was successful.
+# Compile of LCDpackage.vhd was successful.
+# Compile of romPicture.vhd was successful.
+# Compile of romPicture2.vhd was successful.
+# Compile of VGAgenerator.vhd was successful.
+# Compile of VGARegDE2.vhd was successful.
+# Compile of VGARegDE2_115.vhd was successful.
+# Compile of DisplayLogic.vhd was successful.
+# Compile of DisplayLogic0.vhd was successful.
+# Compile of DisplayLogic2.vhd was successful.
+# Compile of testbench_DisplayLogic.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+vsim -novopt work.testbench_displaylogic
+# vsim -novopt work.testbench_displaylogic 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.vgapackage(body)
+# Loading work.testbench_displaylogic(testbench)
+# Loading work.vgagenerator(rtl)
+# Loading work.vgaregde2(rtl)
+# Loading work.displaylogic2(behavioral)
+# Loading work.rompicture2(syn)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)
+run -all
+# ** Failure: OK end of the simulation - Required NUMBER_OF_WRITTEN_IMAGES was done
+#    Time: 16800050 ns  Iteration: 3  Process: /testbench_displaylogic/counter File: C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd
+# Break in Process counter at C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd line 207
+# Compile of VGApackage.vhd was successful.
+# Compile of LCDpackage.vhd was successful.
+# Compile of romPicture.vhd was successful.
+# Compile of romPicture2.vhd was successful.
+# Compile of VGAgenerator.vhd was successful.
+# Compile of VGARegDE2.vhd was successful.
+# Compile of VGARegDE2_115.vhd was successful.
+# Compile of DisplayLogic.vhd was successful.
+# Compile of DisplayLogic0.vhd was successful.
+# Compile of DisplayLogic2.vhd was successful.
+# Compile of testbench_DisplayLogic.vhd was successful.
+# 11 compiles, 0 failed with no errors. 
+restart
+# Loading work.vgapackage(body)
+# Loading work.testbench_displaylogic(testbench)
+# Loading work.vgagenerator(rtl)
+# Loading work.vgaregde2(rtl)
+# Loading work.displaylogic2(behavioral)
+# Loading work.rompicture2(syn)
+run -all
+# ** Failure: OK end of the simulation - Required NUMBER_OF_WRITTEN_IMAGES was done
+#    Time: 16800050 ns  Iteration: 3  Process: /testbench_displaylogic/counter File: C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd
+# Break in Process counter at C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd line 208
+# Compile of testbench_DisplayLogic.vhd was successful.
+restart
+# Loading work.testbench_displaylogic(testbench)
+run -all
+# ** Failure: OK end of the simulation - Required NUMBER_OF_WRITTEN_IMAGES was done
+#    Time: 16800050 ns  Iteration: 3  Process: /testbench_displaylogic/counter File: C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd
+# Break in Process counter at C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd line 208
+# Compile of testbench_DisplayLogic.vhd was successful.
+restart
+# Loading work.testbench_displaylogic(testbench)
+run -all
+# ** Failure: OK end of the simulation - Required NUMBER_OF_WRITTEN_IMAGES was done
+#    Time: 16800050 ns  Iteration: 3  Process: /testbench_displaylogic/counter File: C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd
+# Break in Process counter at C:/SPS/LSPVGA_LCD_DE2_115_V21/testbench_DisplayLogic.vhd line 208
