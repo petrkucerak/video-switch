@@ -1,3 +1,3 @@
 # Video switch
 
-Project on
+Device: DE2-115
