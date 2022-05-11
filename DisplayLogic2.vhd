@@ -20,37 +20,38 @@ architecture behavioral of DisplayLogic2 is
 
 ---------------------------------------------------------------------------------
 -- Used colors 	
-constant RED : RGB_type := ToRGB(196,0,0);  
-constant GREEN : RGB_type := ToRGB(0,128,0);  
-constant BLUE : RGB_type := ToRGB(31,31,196); 
-constant GRAY : RGB_type := ToRGB(31,31,31); 
-constant YELLOW : RGB_type := ToRGB(X"FFFF00"); -- or ToRGB(191,191,0); 
+constant VIOLET : RGB_type := ToRGB(40,22,111);
+constant SKY : RGB_type := ToRGB(0,136,204);
+constant BLUE_DARK : RGB_type := ToRGB(0,72,112); -- image
+constant BLUE_LIGHT : RGB_type := ToRGB(119, 191, 223); -- image	
+constant BACKGROUND : RGB_type := ToRGB(182,221,199); -- BACKGROUND
 constant BLACK : RGB_type := ToRGB(X"000000");  -- or ToRGB(0,0,0);
 ---------------------------------------------------------------------------
-constant MEMROWSIZE : integer := 128; -- memory organization
-constant MEMROWCOUNT : integer := 128;
+constant MEMROWSIZE : integer := 256; -- memory organization
+constant MEMROWCOUNT : integer := 256;
 constant EMBORGX1 : integer := 64; -- positions of picture in the flag
 constant EMBORGY1 : integer := 64;
 constant EMBORGX2 : integer := XSCREEN-MEMROWSIZE-32; -- positions of picture in the flag
 constant EMBORGY2 : integer := YSCREEN-MEMROWCOUNT-32;
-constant MEM_END_ADDRESS : integer := 16383;
+constant MEM_END_ADDRESS : integer := 65535;
 
-component romPicture2 -- picture for flag 640x480
-	port(
-		address : IN  STD_LOGIC_VECTOR(13 DOWNTO 0);
-		clock   : IN  STD_LOGIC;
-		q       : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+component romPicture256x256 IS
+	PORT
+	(
+		address		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		clock		: IN STD_LOGIC  := '1';
+		q		: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
 	);
-end component romPicture2;
+end component romPicture256x256;
 
-signal picture_address_s : std_logic_vector(13 DOWNTO 0); -- ROM mem address
-signal picture_q_s : std_logic_vector(1 downto 0); -- data from ROM memory
+signal picture_address_s : std_logic_vector(15 DOWNTO 0); -- ROM mem address
+signal picture_q_s : std_logic_vector(7 downto 0); -- data from ROM memory
 signal VGA_CLK_n:std_logic;
 begin -- architecture
 
 	VGA_CLK_n <= not VGA_CLK;
 	
-	rom_inst : romPicture2 -- the name of ROM instance and its connections
+	rom_inst : romPicture256x256 -- the name of ROM instance and its connections
 	port map(clock => VGA_CLK_n, address => picture_address_s, q => picture_q_s);
   
    -- the sensitive list defines that process outputs can change 
@@ -62,35 +63,37 @@ begin -- architecture
     begin
 		x:=to_integer(xcolumn); y:=to_integer(yrow); -- convert to integers
       
-		romID:=0;
-		if(x>=EMBORGX1 and x<EMBORGX1+MEMROWSIZE 
-		   and y>=EMBORGY1 and y<EMBORGY1+MEMROWCOUNT) then romID:=1;
-		end if;
+		--romID:=0;
+		--if(x>=EMBORGX1 and x<EMBORGX1+MEMROWSIZE 
+		  -- and y>=EMBORGY1 and y<EMBORGY1+MEMROWCOUNT) then romID:=1;
+		--end if;
 		
-		if(x>=EMBORGX2 and x<EMBORGX2+MEMROWSIZE 
-		   and y>=EMBORGY2 and y<EMBORGY2+MEMROWCOUNT) then romID:=2;
-		end if;
+		--if(x>=EMBORGX2 and x<EMBORGX2+MEMROWSIZE 
+		  -- and y>=EMBORGY2 and y<EMBORGY2+MEMROWCOUNT) then romID:=2;
+		--end if;
 		
-		if picture_q_s /= "00" then
-		   RGB:=BLACK;
-		end if;
+		--if picture_q_s /= "00000000" then
+		  -- RGB:=BACKGROUND;
+		--end if;
 					
 		if(x<0) or (x>=XSCREEN) or (y<0) or (y>=YSCREEN) then
-		   RGB:=BLACK; --black outside of visible frame 
-		elsif romID>0 and picture_q_s /= "00" then -- no picture background
-		   if romID=1 then
-			  if picture_q_s = "01" then RGB:= GRAY; else RGB:= RED; end if;
-			else
-			  if picture_q_s = "01" then RGB:= RED; else RGB:= GRAY; end if;
+		   RGB:=BLACK; --black outside of visible frame
+		
+		--elsif romID>0 and picture_q_s /= "000000000" then -- no picture background
+		  -- if romID=1 then
+			 -- if picture_q_s = "00001010" then RGB:= BLUE_DARK;
+			 -- elsif picture_q_s = "10011011" then RGB:= BLUE_LIGHT;
+			  --end if;
+			--end if;
+		
+		elsif (x-(XSCREEN/2))*(x-(XSCREEN/2)) + (y-(YSCREEN/2))*(y-(YSCREEN/2)) <= 10000 then
+			if (6*y + 8*x < 250 + 3*YSCREEN + 4*XSCREEN AND 6*y + 250 + 8*x > 3*YSCREEN + 4*XSCREEN) then RGB:=BLUE_DARK;
+				else RGB:=SKY;
 			end if;
-		elsif x*x+(y-YSCREEN)*(y-YSCREEN) < YSCREEN*YSCREEN/16 then
-		   RGB:=YELLOW;
-		elsif 5*y < 5*YSCREEN - 6*x then  -- line equation  y = 240-(6/5)*x
-		   RGB:=GREEN;
-		elsif 8*y < 8*YSCREEN- 3*x then     -- line equation  y = 240-(3/8)*x
-		   RGB:=YELLOW;
+		elsif (4*y < 3*x + 250 AND 4*y + 250 > 3*x)
+			then RGB:=VIOLET;
 		else 
-		   RGB:=BLUE; -- else is necessary, the complete definition prevents forbidden latches
+		   RGB:=BACKGROUND; -- else is necessary, the complete definition prevents forbidden latches
 		end if;
 
 		case romID is

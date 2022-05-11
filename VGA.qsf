@@ -606,9 +606,6 @@ set_location_assignment PIN_U25 -to TOUCH_DIN
 set_location_assignment PIN_T26 -to TOUCH_CS_N
 set_location_assignment PIN_T25 -to TOUCH_DCLK
 set_location_assignment PIN_L22 -to TOUCH_PENIRQN
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name TEXT_FILE @README.txt
 set_global_assignment -name TEXT_FILE @ListOfFiles.txt
 set_global_assignment -name BDF_FILE Demo_LCD0.bdf
@@ -617,7 +614,6 @@ set_global_assignment -name BDF_FILE Demo_LCD.bdf
 set_global_assignment -name VHDL_FILE DisplayLogic2.vhd
 set_global_assignment -name VHDL_FILE VGApackage.vhd
 set_global_assignment -name VHDL_FILE testbench_DisplayLogic.vhd
-set_global_assignment -name QIP_FILE romPicture2.qip
 set_global_assignment -name VHDL_FILE LCDgenerator.vhd
 set_global_assignment -name VHDL_FILE LCDRegDE2_115.vhd
 set_global_assignment -name VHDL_FILE LCDpackage.vhd
@@ -633,4 +629,8 @@ set_global_assignment -name VHDL_FILE DisplayLogic.vhd
 set_global_assignment -name QIP_FILE romPicture.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE VGAgenerator_Waveform.vwf
 set_global_assignment -name SDC_FILE VGAtiming.sdc
+set_global_assignment -name QIP_FILE romPicture256x256.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -319,7 +319,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 544 144 760 256)
+	(rect 544 120 760 232)
 	(text "DisplayLogic2" (rect 5 0 74 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
@@ -406,35 +406,12 @@ applicable agreement for further details.
 	(pt 1016 304)
 )
 (connector
-	(pt 544 208)
-	(pt 536 208)
-)
-(connector
-	(pt 536 272)
-	(pt 536 208)
-)
-(connector
-	(pt 544 192)
-	(pt 528 192)
-	(bus)
-)
-(connector
-	(pt 544 176)
-	(pt 520 176)
-	(bus)
-)
-(connector
 	(pt 792 288)
 	(pt 512 288)
 )
 (connector
 	(pt 792 304)
 	(pt 512 304)
-)
-(connector
-	(pt 528 192)
-	(pt 528 256)
-	(bus)
 )
 (connector
 	(pt 528 256)
@@ -447,8 +424,64 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 520 176)
+	(pt 304 240)
+	(pt 296 240)
+)
+(connector
+	(pt 304 256)
+	(pt 296 256)
+)
+(connector
+	(pt 536 184)
+	(pt 544 184)
+)
+(connector
+	(pt 536 272)
+	(pt 536 184)
+)
+(connector
+	(pt 528 168)
+	(pt 544 168)
+	(bus)
+)
+(connector
+	(pt 520 152)
+	(pt 544 152)
+	(bus)
+)
+(connector
+	(pt 528 256)
+	(pt 528 168)
+	(bus)
+)
+(connector
 	(pt 520 240)
+	(pt 520 152)
+	(bus)
+)
+(connector
+	(pt 792 256)
+	(pt 760 256)
+	(bus)
+)
+(connector
+	(pt 776 240)
+	(pt 776 168)
+	(bus)
+)
+(connector
+	(pt 784 224)
+	(pt 784 152)
+	(bus)
+)
+(connector
+	(pt 784 152)
+	(pt 760 152)
+	(bus)
+)
+(connector
+	(pt 776 168)
+	(pt 760 168)
 	(bus)
 )
 (connector
@@ -460,41 +493,8 @@ applicable agreement for further details.
 	(pt 792 272)
 )
 (connector
-	(pt 304 240)
-	(pt 296 240)
-)
-(connector
-	(pt 304 256)
-	(pt 296 256)
-)
-(connector
+	(pt 760 184)
 	(pt 760 256)
-	(pt 760 208)
-	(bus)
-)
-(connector
-	(pt 792 256)
-	(pt 760 256)
-	(bus)
-)
-(connector
-	(pt 776 240)
-	(pt 776 192)
-	(bus)
-)
-(connector
-	(pt 784 224)
-	(pt 784 176)
-	(bus)
-)
-(connector
-	(pt 760 176)
-	(pt 784 176)
-	(bus)
-)
-(connector
-	(pt 760 192)
-	(pt 776 192)
 	(bus)
 )
 (junction (pt 536 272))
