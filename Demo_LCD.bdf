@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 128 232 296 248)
+	(rect 80 232 248 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,13 +34,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 72 248 128 264))
+	(annotation_block (location)(rect 24 248 80 264))
 )
 (pin
 	(input)
-	(rect 120 120 288 136)
+	(rect 72 120 240 136)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[0]" (rect 5 0 36 12)(font "Arial" ))
+	(text "SW[0]" (rect 5 0 35 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -51,13 +51,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 56 136 120 152))
+	(annotation_block (location)(rect 8 136 72 152))
 )
 (pin
 	(input)
-	(rect 128 248 296 264)
+	(rect 80 248 248 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "KEY[3]" (rect 5 0 41 12)(font "Arial" ))
+	(text "KEY[3]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 64 264 128 280))
+	(annotation_block (location)(rect 16 264 80 280))
 )
 (pin
 	(output)
@@ -457,6 +457,42 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 192 96))
 	)
 )
+(symbol
+	(rect 568 -128 776 -16)
+	(text "DisplayLogicBigInvert" (rect 5 0 113 12)(font "Arial" ))
+	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "xcolumn[9..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "xcolumn[9..0]" (rect 21 27 88 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "yrow[9..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "yrow[9..0]" (rect 21 43 70 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "VGA_CLK" (rect 0 0 49 12)(font "Arial" ))
+		(text "VGA_CLK" (rect 21 59 70 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "RGB24[23..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "RGB24[23..0]" (rect 131 27 198 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 96))
+	)
+)
 (connector
 	(pt 528 256)
 	(pt 512 256)
@@ -466,14 +502,6 @@ applicable agreement for further details.
 	(pt 520 240)
 	(pt 512 240)
 	(bus)
-)
-(connector
-	(pt 304 240)
-	(pt 296 240)
-)
-(connector
-	(pt 304 256)
-	(pt 296 256)
 )
 (connector
 	(pt 1312 224)
@@ -561,16 +589,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 800 40)
-	(pt 776 40)
-	(bus)
-)
-(connector
-	(pt 800 96)
-	(pt 800 40)
-	(bus)
-)
-(connector
 	(pt 512 272)
 	(pt 536 272)
 )
@@ -618,11 +636,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 520 168)
-	(pt 520 40)
-	(bus)
-)
-(connector
 	(pt 568 184)
 	(pt 528 184)
 	(bus)
@@ -630,11 +643,6 @@ applicable agreement for further details.
 (connector
 	(pt 528 256)
 	(pt 528 184)
-	(bus)
-)
-(connector
-	(pt 528 184)
-	(pt 528 56)
 	(bus)
 )
 (connector
@@ -646,15 +654,74 @@ applicable agreement for further details.
 	(pt 536 200)
 )
 (connector
-	(pt 536 200)
+	(pt 568 -96)
+	(pt 520 -96)
+	(bus)
+)
+(connector
+	(pt 520 -96)
+	(pt 520 40)
+	(bus)
+)
+(connector
+	(pt 520 40)
+	(pt 520 168)
+	(bus)
+)
+(connector
+	(pt 568 -80)
+	(pt 528 -80)
+	(bus)
+)
+(connector
+	(pt 528 -80)
+	(pt 528 56)
+	(bus)
+)
+(connector
+	(pt 528 56)
+	(pt 528 184)
+	(bus)
+)
+(connector
+	(pt 568 -64)
+	(pt 536 -64)
+)
+(connector
+	(pt 536 -64)
 	(pt 536 72)
 )
 (connector
+	(pt 536 72)
+	(pt 536 200)
+)
+(connector
+	(pt 240 128)
 	(pt 840 128)
-	(pt 288 128)
+)
+(connector
+	(pt 248 240)
+	(pt 304 240)
+)
+(connector
+	(pt 248 256)
+	(pt 304 256)
+)
+(connector
+	(pt 776 -96)
+	(pt 800 -96)
+	(bus)
+)
+(connector
+	(pt 800 -96)
+	(pt 800 96)
+	(bus)
 )
 (junction (pt 536 272))
 (junction (pt 520 168))
 (junction (pt 528 184))
 (junction (pt 536 200))
+(junction (pt 520 40))
+(junction (pt 528 56))
+(junction (pt 536 72))
 (text "See LCD generator notes" (rect 520 320 692 336)(font "Arial" (font_size 10)))
