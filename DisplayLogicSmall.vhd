@@ -64,6 +64,8 @@ begin -- architecture
     begin
 		x:=to_integer(xcolumn); y:=to_integer(yrow); -- convert to integers
 		
+		x:= x - XSIZE / 2; y:= y - YSIZE / 2; -- center small image
+		
 		romID:=0;
 		if(x>=EMBORGX1 and x<EMBORGX1+MEMROWSIZE 
 		   and y>=EMBORGY1 and y<EMBORGY1+MEMROWCOUNT) then romID:=1;
