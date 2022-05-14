@@ -59,7 +59,7 @@ begin
 			else SelE1 <= "00";
 			end if;
 			
-			if countr >=  (XSCREEN/2)*(XSCREEN/2) then -- pyhagoras
+			if (XSCREEN * XSCREEN) + (YSCREEN * YSCREEN) <= 4 * countr then -- pyhagoras
 				nextState <= '1';
 			else nextState <= '0';
 			end if;
