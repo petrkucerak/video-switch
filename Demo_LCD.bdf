@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 80 232 248 248)
+	(rect 16 232 184 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLOCK_50" (rect 5 0 60 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,11 +34,11 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 24 248 80 264))
+	(annotation_block (location)(rect -40 248 16 264))
 )
 (pin
 	(input)
-	(rect 80 248 248 264)
+	(rect 16 248 184 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "KEY[3]" (rect 5 0 40 12)(font "Arial" ))
 	(pt 168 8)
@@ -51,11 +51,11 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 16 264 80 280))
+	(annotation_block (location)(rect -48 264 16 280))
 )
 (pin
 	(input)
-	(rect 72 -16 240 0)
+	(rect 8 -16 176 0)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "SW[0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 8 0 72 16))
+	(annotation_block (location)(rect -56 0 8 16))
 )
 (pin
 	(output)
@@ -191,7 +191,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 256 376 272 552)
+	(rect 192 376 208 552)
 	(text "OUTPUT" (rect 0 1 10 39)(font "Arial" (font_size 6))(vertical))
 	(text "LEDG[6]" (rect 0 90 12 132)(font "Arial" )(vertical))
 	(pt 8 0)
@@ -205,10 +205,10 @@ applicable agreement for further details.
 		(line (pt 12 78)(pt 8 82))
 	)
 	(flipy_rotate90)
-	(annotation_block (location)(rect 288 528 344 544))
+	(annotation_block (location)(rect 224 528 280 544))
 )
 (symbol
-	(rect 304 208 512 384)
+	(rect 256 208 464 384)
 	(text "LCDgenerator" (rect 5 0 73 12)(font "Arial" ))
 	(text "iGen" (rect 8 160 30 172)(font "Arial" ))
 	(port
@@ -572,28 +572,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 528 -408 624 -312)
-	(text "divider1000" (rect 5 0 71 14)(font "Arial" (font_size 8)))
-	(text "inst11" (rect 8 77 37 89)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Y" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "Y" (rect 65 27 74 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
 	(rect 248 -232 280 -184)
 	(text "NOT" (rect 0 27 10 47)(font "Arial" (font_size 6))(vertical))
 	(text "inst12" (rect 21 16 33 45)(font "Arial" )(vertical))
@@ -620,31 +598,9 @@ applicable agreement for further details.
 	(rotate90)
 )
 (symbol
-	(rect 432 -408 528 -312)
-	(text "divider1000" (rect 5 0 71 14)(font "Arial" (font_size 8)))
-	(text "inst13" (rect 8 77 37 89)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Y" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "Y" (rect 65 27 74 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
-	(rect 328 -408 424 -312)
+	(rect 528 -408 624 -312)
 	(text "divider100" (rect 5 0 64 14)(font "Arial" (font_size 8)))
-	(text "inst14" (rect 8 77 37 89)(font "Arial" ))
+	(text "inst9616" (rect 8 77 49 89)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -662,16 +618,6 @@ applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 80 80))
 	)
-)
-(connector
-	(pt 512 256)
-	(pt 528 256)
-	(bus)
-)
-(connector
-	(pt 512 240)
-	(pt 520 240)
-	(bus)
 )
 (connector
 	(pt 520 -96)
@@ -721,28 +667,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 520 -96)
-	(pt 520 32)
-	(bus)
-)
-(connector
-	(pt 520 32)
-	(pt 520 240)
-	(bus)
-)
-(connector
 	(pt 528 -208)
 	(pt 528 -80)
-	(bus)
-)
-(connector
-	(pt 528 -80)
-	(pt 528 48)
-	(bus)
-)
-(connector
-	(pt 528 48)
-	(pt 528 256)
 	(bus)
 )
 (connector
@@ -756,14 +682,6 @@ applicable agreement for further details.
 (connector
 	(pt 536 64)
 	(pt 536 272)
-)
-(connector
-	(pt 240 -8)
-	(pt 296 -8)
-)
-(connector
-	(pt 248 256)
-	(pt 264 256)
 )
 (connector
 	(pt 1088 -112)
@@ -836,22 +754,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 264 256)
-	(pt 304 256)
-)
-(connector
-	(pt 264 -184)
-	(pt 264 256)
-)
-(connector
-	(pt 264 256)
-	(pt 264 376)
-)
-(connector
-	(pt 296 -8)
-	(pt 296 -360)
-)
-(connector
 	(pt 264 -232)
 	(pt 264 -344)
 )
@@ -876,26 +778,6 @@ applicable agreement for further details.
 (connector
 	(pt 640 -376)
 	(pt 624 -376)
-)
-(connector
-	(pt 280 240)
-	(pt 280 -376)
-)
-(connector
-	(pt 432 -376)
-	(pt 424 -376)
-)
-(connector
-	(pt 248 240)
-	(pt 280 240)
-)
-(connector
-	(pt 280 240)
-	(pt 304 240)
-)
-(connector
-	(pt 280 -376)
-	(pt 328 -376)
 )
 (connector
 	(pt 1088 -112)
@@ -940,10 +822,6 @@ applicable agreement for further details.
 	(pt 1424 304)
 )
 (connector
-	(pt 512 272)
-	(pt 536 272)
-)
-(connector
 	(pt 1088 224)
 	(pt 1208 224)
 	(bus)
@@ -959,16 +837,98 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(pt 296 -360)
+	(pt 296 -8)
+)
+(connector
+	(pt 176 -8)
+	(pt 296 -8)
+)
+(connector
+	(pt 264 -184)
+	(pt 264 -176)
+)
+(connector
+	(pt 264 -176)
+	(pt 200 -176)
+)
+(connector
+	(pt 200 -176)
+	(pt 200 256)
+)
+(connector
+	(pt 200 256)
+	(pt 200 376)
+)
+(connector
+	(pt 184 240)
+	(pt 256 240)
+)
+(connector
+	(pt 520 -96)
+	(pt 520 32)
+	(bus)
+)
+(connector
+	(pt 520 32)
+	(pt 520 240)
+	(bus)
+)
+(connector
+	(pt 528 -80)
+	(pt 528 48)
+	(bus)
+)
+(connector
+	(pt 528 48)
+	(pt 528 256)
+	(bus)
+)
+(connector
+	(pt 184 256)
+	(pt 200 256)
+)
+(connector
+	(pt 200 256)
+	(pt 256 256)
+)
+(connector
 	(pt 536 272)
 	(pt 1208 272)
 )
 (connector
-	(pt 512 288)
+	(pt 464 240)
+	(pt 520 240)
+	(bus)
+)
+(connector
+	(pt 464 256)
+	(pt 528 256)
+	(bus)
+)
+(connector
+	(pt 464 272)
+	(pt 536 272)
+)
+(connector
+	(pt 464 288)
 	(pt 1208 288)
 )
 (connector
-	(pt 512 304)
+	(pt 464 304)
 	(pt 1208 304)
+)
+(connector
+	(pt 464 336)
+	(pt 488 336)
+)
+(connector
+	(pt 488 -376)
+	(pt 488 336)
+)
+(connector
+	(pt 488 -376)
+	(pt 528 -376)
 )
 (junction (pt 536 272))
 (junction (pt 520 -96))
@@ -977,7 +937,5 @@ applicable agreement for further details.
 (junction (pt 528 48))
 (junction (pt 536 -64))
 (junction (pt 536 64))
-(junction (pt 264 256))
 (junction (pt 832 -376))
-(junction (pt 280 240))
-(text "See LCD generator notes" (rect 520 320 692 336)(font "Arial" (font_size 10)))
+(junction (pt 200 256))
