@@ -20,11 +20,11 @@ architecture behavioral of DisplayLogicBigInvert is
 
 ---------------------------------------------------------------------------------
 -- Used colors 	
-constant VIOLET : RGB_type := ToRGB(40,22,111);
-constant SKY : RGB_type := ToRGB(0,136,204);
-constant BLUE_DARK : RGB_type := ToRGB(0,72,112); -- image
-constant BLUE_LIGHT : RGB_type := ToRGB(119, 191, 223); -- image	
-constant BACKGROUND : RGB_type := ToRGB(182,221,199); -- BACKGROUND
+constant VIOLET : RGB_type := ToRGB(111,22,40);
+constant SKY : RGB_type := ToRGB(204,136,0);
+constant BLUE_DARK : RGB_type := ToRGB(112,72,0); -- image
+constant BLUE_LIGHT : RGB_type := ToRGB(223, 191, 119); -- image	
+constant BACKGROUND : RGB_type := ToRGB(199,221,182); -- BACKGROUND
 constant BLACK : RGB_type := ToRGB(X"000000");  -- or ToRGB(0,0,0);
 ---------------------------------------------------------------------------
 constant MEMROWSIZE : integer := 256; -- memory organization

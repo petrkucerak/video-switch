@@ -37,7 +37,33 @@ begin
 			-- "101"; -- čekání po dobu T; -> "01"
 			-- "110"; -- proměna z nálepky 2. na 1. efektem opačně běžícím E1;
 			-- "111"; -- čekání po dobu T; -> "00"
-	-- e1:process(VSN_N)
+	e1:process(VS_N, state, xcolumm, yrow)
+		variable countr : integer range 0 to (XSCREEN)*(XSCREEN);
+		variable x, y : integer; -- renamed xcolumn and yrow
+		variable INC : integer range 0 to XSCREEN * XSCREEN;
+		begin
+			
+			x:=to_integer(xcolumm); y:=to_integer(yrow); -- convert to integers
+			
+			if state /= "000" then
+				countr := 0;
+				INC := 24;
+			elsif rising_edge(VS_N) then
+				countr := countr + INC;
+				INC := INC + 24;
+				
+			end if;
+			
+			if (x-(XSCREEN/2))*(x-(XSCREEN/2)) + (y-(YSCREEN/2))*(y-(YSCREEN/2)) <= countr then
+				SelE1 <= "01";
+			else SelE1 <= "00";
+			end if;
+			
+			if countr >=  (XSCREEN/2)*(XSCREEN/2) then -- pyhagoras
+				nextState <= '1';
+			else nextState <= '0';
+			end if;
+	end process;
 		
 	
 

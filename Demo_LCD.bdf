@@ -55,7 +55,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 8 -16 176 0)
+	(rect -80 -16 88 0)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "SW[0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -56 0 8 16))
+	(annotation_block (location)(rect -144 0 -80 16))
 )
 (pin
 	(output)
@@ -479,7 +479,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 600 -408 768 -296)
+	(rect 584 -408 752 -296)
 	(text "FSM" (rect 5 0 27 12)(font "Arial" ))
 	(text "inst4" (rect 8 96 31 108)(font "Arial" ))
 	(port
@@ -541,28 +541,6 @@ applicable agreement for further details.
 	(rotate90)
 )
 (symbol
-	(rect 480 -408 576 -312)
-	(text "divider100" (rect 5 0 64 14)(font "Arial" (font_size 8)))
-	(text "inst9616" (rect 8 77 49 89)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 96 32)
-		(output)
-		(text "Y" (rect 0 0 9 14)(font "Arial" (font_size 8)))
-		(text "Y" (rect 65 27 74 41)(font "Arial" (font_size 8)))
-		(line (pt 96 32)(pt 80 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 80 80))
-	)
-)
-(symbol
 	(rect 864 -24 1064 88)
 	(text "OutputSwitch" (rect 5 0 69 12)(font "Arial" ))
 	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
@@ -598,21 +576,21 @@ applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "VGA_R[7..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "VGA_R[7..0]" (rect 127 27 179 39)(font "Arial" ))
+		(text "VGA_R[7..0]" (rect 127 27 189 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(port
 		(pt 200 48)
 		(output)
 		(text "VGA_G[7..0]" (rect 0 0 62 12)(font "Arial" ))
-		(text "VGA_G[7..0]" (rect 127 43 179 55)(font "Arial" ))
+		(text "VGA_G[7..0]" (rect 127 43 189 55)(font "Arial" ))
 		(line (pt 200 48)(pt 184 48)(line_width 3))
 	)
 	(port
 		(pt 200 64)
 		(output)
 		(text "VGA_B[7..0]" (rect 0 0 61 12)(font "Arial" ))
-		(text "VGA_B[7..0]" (rect 128 59 179 71)(font "Arial" ))
+		(text "VGA_B[7..0]" (rect 128 59 189 71)(font "Arial" ))
 		(line (pt 200 64)(pt 184 64)(line_width 3))
 	)
 	(drawing
@@ -662,14 +640,14 @@ applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "nextState" (rect 0 0 47 12)(font "Arial" ))
-		(text "nextState" (rect 132 27 171 39)(font "Arial" ))
+		(text "nextState" (rect 132 27 179 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(port
 		(pt 192 48)
 		(output)
 		(text "Sel[1..0]" (rect 0 0 41 12)(font "Arial" ))
-		(text "Sel[1..0]" (rect 137 43 171 55)(font "Arial" ))
+		(text "Sel[1..0]" (rect 137 43 178 55)(font "Arial" ))
 		(line (pt 192 48)(pt 176 48)(line_width 3))
 	)
 	(drawing
@@ -745,26 +723,6 @@ applicable agreement for further details.
 	(pt 1080 240)
 	(pt 1208 240)
 	(bus)
-)
-(connector
-	(pt 176 -8)
-	(pt 296 -8)
-)
-(connector
-	(pt 264 -184)
-	(pt 264 -176)
-)
-(connector
-	(pt 264 -176)
-	(pt 200 -176)
-)
-(connector
-	(pt 200 -176)
-	(pt 200 256)
-)
-(connector
-	(pt 200 256)
-	(pt 200 376)
 )
 (connector
 	(pt 1208 256)
@@ -953,32 +911,13 @@ applicable agreement for further details.
 	(pt 448 336)
 )
 (connector
-	(pt 464 -448)
-	(pt 792 -448)
-	(bus)
-)
-(connector
 	(pt 792 -448)
 	(pt 792 -376)
 	(bus)
 )
 (connector
-	(pt 448 -376)
-	(pt 480 -376)
-)
-(connector
 	(pt 432 320)
 	(pt 464 320)
-)
-(connector
-	(pt 464 -248)
-	(pt 584 -248)
-	(bus)
-)
-(connector
-	(pt 464 -448)
-	(pt 464 -248)
-	(bus)
 )
 (connector
 	(pt 520 -232)
@@ -1023,14 +962,6 @@ applicable agreement for further details.
 	(pt 448 -200)
 )
 (connector
-	(pt 448 -376)
-	(pt 448 -200)
-)
-(connector
-	(pt 448 -200)
-	(pt 448 336)
-)
-(connector
 	(pt 776 -232)
 	(pt 840 -232)
 	(bus)
@@ -1039,28 +970,6 @@ applicable agreement for further details.
 	(pt 840 -232)
 	(pt 840 8)
 	(bus)
-)
-(connector
-	(pt 264 -232)
-	(pt 264 -344)
-)
-(connector
-	(pt 768 -376)
-	(pt 792 -376)
-	(bus)
-)
-(connector
-	(pt 792 -376)
-	(pt 1072 -376)
-	(bus)
-)
-(connector
-	(pt 576 -376)
-	(pt 600 -376)
-)
-(connector
-	(pt 264 -344)
-	(pt 600 -344)
 )
 (connector
 	(pt 776 -248)
@@ -1079,20 +988,81 @@ applicable agreement for further details.
 	(pt 360 -352)
 )
 (connector
-	(pt 424 -360)
-	(pt 600 -360)
-)
-(connector
-	(pt 296 -352)
-	(pt 296 -8)
-)
-(connector
 	(pt 344 -464)
 	(pt 344 -368)
 )
 (connector
 	(pt 344 -368)
 	(pt 360 -368)
+)
+(connector
+	(pt 792 -448)
+	(pt 472 -448)
+	(bus)
+)
+(connector
+	(pt 584 -248)
+	(pt 472 -248)
+	(bus)
+)
+(connector
+	(pt 472 -448)
+	(pt 472 -248)
+	(bus)
+)
+(connector
+	(pt 424 -360)
+	(pt 584 -360)
+)
+(connector
+	(pt 448 -376)
+	(pt 584 -376)
+)
+(connector
+	(pt 448 -376)
+	(pt 448 -200)
+)
+(connector
+	(pt 448 -200)
+	(pt 448 336)
+)
+(connector
+	(pt 792 -376)
+	(pt 1072 -376)
+	(bus)
+)
+(connector
+	(pt 752 -376)
+	(pt 792 -376)
+	(bus)
+)
+(connector
+	(pt 200 -184)
+	(pt 264 -184)
+)
+(connector
+	(pt 584 -344)
+	(pt 264 -344)
+)
+(connector
+	(pt 264 -344)
+	(pt 264 -232)
+)
+(connector
+	(pt 200 -184)
+	(pt 200 256)
+)
+(connector
+	(pt 200 256)
+	(pt 200 376)
+)
+(connector
+	(pt 296 -352)
+	(pt 296 -8)
+)
+(connector
+	(pt 296 -8)
+	(pt 88 -8)
 )
 (junction (pt 536 272))
 (junction (pt 200 256))
