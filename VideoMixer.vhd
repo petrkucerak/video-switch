@@ -88,6 +88,7 @@ begin
 				nextState1 <= '1';
 			else nextState1 <= '0';
 			end if;
+			
 	end process;
 	
 	e2:process(VS_N, state, xcolumn, yrow)

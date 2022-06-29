@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="nios_system/simulation/submodules/nios_system_irq_mapper.vho"
+   type="VHDL"
+   library="irq_mapper" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_width_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="width_adapter"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="width_adapter"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="width_adapter"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_width_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="width_adapter"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="width_adapter"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="width_adapter"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_rsp_xbar_mux_001.vho"
+   type="VHDL"
+   library="rsp_xbar_mux_001" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_rsp_xbar_mux.vho"
+   type="VHDL"
+   library="rsp_xbar_mux" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_rsp_xbar_demux_002.vho"
+   type="VHDL"
+   library="rsp_xbar_demux_002" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_rsp_xbar_demux.vho"
+   type="VHDL"
+   library="rsp_xbar_demux" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_cmd_xbar_mux.vho"
+   type="VHDL"
+   library="cmd_xbar_mux" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_cmd_xbar_demux_001.vho"
+   type="VHDL"
+   library="cmd_xbar_demux_001" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_cmd_xbar_demux.vho"
+   type="VHDL"
+   library="cmd_xbar_demux" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_reset_controller.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_reset_controller.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="rst_controller"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_burst_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="burst_adapter"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="burst_adapter"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_burst_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="burst_adapter"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="burst_adapter"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_id_router_015.vho"
+   type="VHDL"
+   library="id_router_015" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_id_router_013.vho"
+   type="VHDL"
+   library="id_router_013" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_id_router_003.vho"
+   type="VHDL"
+   library="id_router_003" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_id_router_002.vho"
+   type="VHDL"
+   library="id_router_002" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_id_router.vho"
+   type="VHDL"
+   library="id_router" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_addr_router_001.vho"
+   type="VHDL"
+   library="addr_router_001" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_addr_router.vho"
+   type="VHDL"
+   library="addr_router" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
+   type="VHDL"
+   library="character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent_rsp_fifo" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo.vho"
+   type="VHDL"
+   library="SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rdata_fifo" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
+   type="VHDL"
+   library="SRAM_avalon_sram_slave_translator_avalon_universal_slave_0_agent_rsp_fifo" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
+   type="VHDL"
+   library="SDRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo.vho"
+   type="VHDL"
+   library="CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_slave_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_slave_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_master_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_instruction_master_translator_avalon_universal_master_0_agent"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_master_agent.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_instruction_master_translator_avalon_universal_master_0_agent"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_jtag_debug_module_translator"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_jtag_debug_module_translator"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/mentor/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_instruction_master_translator"
+   simulator="modelsim" />
+ <file
+   path="nios_system/simulation/submodules/aldec/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="CPU_instruction_master_translator"
+   simulator="riviera" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_to_external_bus_bridge_0.vhd"
+   type="VHDL"
+   library="to_external_bus_bridge_0" />
+ <file
+   path="nios_system/simulation/submodules/altera_up_character_lcd_communication.v"
+   type="VERILOG"
+   library="character_lcd_0" />
+ <file
+   path="nios_system/simulation/submodules/altera_up_character_lcd_initialization.v"
+   type="VERILOG"
+   library="character_lcd_0" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_character_lcd_0.vhd"
+   type="VHDL"
+   library="character_lcd_0" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_sysid.vho"
+   type="VHDL"
+   library="sysid" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU.sdc"
+   type="SDC"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_jtag_debug_module_sysclk.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_jtag_debug_module_tck.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_jtag_debug_module_wrapper.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_nios2_waves.do"
+   type="OTHER"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_ociram_default_contents.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_ociram_default_contents.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_ociram_default_contents.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_oci_test_bench.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_rf_ram_a.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_rf_ram_a.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_rf_ram_a.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_rf_ram_b.dat"
+   type="DAT"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_rf_ram_b.hex"
+   type="HEX"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_rf_ram_b.mif"
+   type="MIF"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_CPU_test_bench.vhd"
+   type="VHDL"
+   library="CPU" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Onchip_memory.vhd"
+   type="VHDL"
+   library="Onchip_memory" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_SRAM.vhd"
+   type="VHDL"
+   library="SRAM" />
+ <file
+   path="nios_system/simulation/submodules/altera_up_rs232_counters.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="nios_system/simulation/submodules/altera_up_rs232_in_deserializer.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="nios_system/simulation/submodules/altera_up_rs232_out_serializer.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="nios_system/simulation/submodules/altera_up_sync_fifo.v"
+   type="VERILOG"
+   library="Serial_Port" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Serial_Port.vhd"
+   type="VHDL"
+   library="Serial_Port" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Pushbuttons.vhd"
+   type="VHDL"
+   library="Pushbuttons" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Slider_Switches.vhd"
+   type="VHDL"
+   library="Slider_Switches" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_HEX7_HEX4.vhd"
+   type="VHDL"
+   library="HEX7_HEX4" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_HEX3_HEX0.vhd"
+   type="VHDL"
+   library="HEX3_HEX0" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Green_LEDs.vhd"
+   type="VHDL"
+   library="Green_LEDs" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Red_LEDs.vhd"
+   type="VHDL"
+   library="Red_LEDs" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_SDRAM.vhd"
+   type="VHDL"
+   library="SDRAM" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_Interval_Timer.vhd"
+   type="VHDL"
+   library="Interval_Timer" />
+ <file
+   path="nios_system/simulation/submodules/nios_system_JTAG_UART.vhd"
+   type="VHDL"
+   library="JTAG_UART" />
+ <file path="nios_system/simulation/nios_system.vhd" type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_sram_avalon_sram_slave_translator_avalon_universal_slave_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_character_lcd_0_avalon_lcd_slave_translator_avalon_universal_slave_0_agent.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_width_adapter.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_width_adapter_001.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_width_adapter_002.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_width_adapter_003.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_cpu_instruction_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_cpu_data_master_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_burst_adapter.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_burst_adapter_001.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_cpu_jtag_debug_module_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_sdram_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_onchip_memory_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_jtag_uart_avalon_jtag_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_interval_timer_s1_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_sysid_control_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_red_leds_avalon_parallel_port_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_serial_port_avalon_rs232_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_sram_avalon_sram_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_character_lcd_0_avalon_lcd_slave_translator.vhd"
+   type="VHDL" />
+ <file
+   path="nios_system/simulation/nios_system_to_external_bus_bridge_0_avalon_slave_translator.vhd"
+   type="VHDL" />
+ <topLevel name="nios_system" />
+ <deviceFamily name="cycloneive" />
+ <modelMap
+   controllerPath="nios_system.Onchip_memory"
+   modelPath="nios_system.Onchip_memory" />
+</simPackage>
