@@ -14,7 +14,7 @@ volatile int * const green_LED_ptr	= (int *) GREEN_LED_BASE;	// green LED addres
 volatile int * const SW_switch_ptr	= (int *) SLIDER_SWITCH_BASE;	// SW slider switch address
 volatile int * const KEY_ptr	= (int *) PUSHBUTTON_BASE;	// inverted KEY, 1 here means pressed
 volatile byte * const extbus = (byte *) EXTERNAL_BUS_BASE;	// external bus
-
+/*
 int main(void)
 {
 
@@ -58,7 +58,7 @@ int main(void)
 }
 
 
-
+*/
 
 
 

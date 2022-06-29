@@ -59,6 +59,13 @@ applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "vector_T[8..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "vector_T[8..0]" (rect 21 107 78 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
 		(pt 192 32)
 		(output)
 		(text "nextState" (rect 0 0 36 12)(font "Arial" ))

@@ -12,13 +12,12 @@ use work.VGApackage.all;
 
 entity VideoMixer is
 
-	generic(T:integer:=250);
-
 	port(
 		state : in std_logic_vector(2 downto 0);
 		xcolumn, yrow : in vga_xy;
 		VS_N, HS_N : in std_logic;
 		nextState : out std_logic;
+		vector_T : in std_logic_vector(8 downto 0);
 		Sel : out std_logic_vector (1 downto 0)
 	);
 
@@ -47,15 +46,22 @@ begin
 			-- "110"; -- proměna z nálepky 2. na 1. efektem opačně běžícím E1;
 			-- "111"; -- čekání po dobu T; -> "00"
 	tSet:process(VS_N)
-		variable countr : integer range 0 to T;
+		variable T : integer range 0 to 25500;
+		variable countr : integer range 0 to 25500;
 		begin
+			T:= to_integer(unsigned(vector_T));
+			T:= T * 100;
+			if T = 0 then
+				T:= 250;
+			end if;
+			
 			if state /= "001" AND state /= "011" AND state /= "101" AND state /= "111" then
 				countr := 0;
 			elsif rising_edge(VS_N) then
 				countr := countr + 1;
 			end if;
 			
-			if countr = T then
+			if countr >= T then
 				nextState0<='1';
 			else nextState0<='0';
 			end if;

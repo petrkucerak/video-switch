@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=C\:\\SPS\\video-switch\\software\\video-switch
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\SPS\\video-switch\\nios_system.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\SPS\\video-switch\\software\\video-switch_bsp
